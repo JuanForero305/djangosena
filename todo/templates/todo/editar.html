@@ -1,13 +1,13 @@
-{% extends "todo/layout.html" %}
-{% block title %}Agregar Tarea{% endblock %}
+{% extends 'todo/layout.html' %}
 {% block content %}
 <div class="container text-center">
     <form method="POST">
         {% csrf_token %}
         <div class="form-group">
-        {{ form.as_p }}
+        {{ form }}
         </div>
-        <button type="submit" class="btn btn-primary" >Guardar tarea </button>
+        <button type="submit" class="btn btn-primary" > Editar Tarea </button>
     </form>
 </div>
+
 {% endblock %}
